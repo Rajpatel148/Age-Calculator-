@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Age calculator</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-container">
+        <!-- //input-part -->
+        <div class="input-part">
+          <div class="content">
+            <label for="day" class="input-name">DAY</label>
+            <input type="number" name="day" id="day" class="input-box" placeholder="DD" min="1" max="31" step="1" onclick="removeError()"/>
+            <p class="error" id="error-day">Invalid</p>
+          </div>
+          <div class="content">
+            <label for="month" class="input-name">MONTH</label>
+            <input type="number" name="month" id="month" class="input-box" placeholder="MM" min="1" max="12" step="1" onclick="removeError()" />
+            <p class="error" id="error-month">Invalid</p>
+          </div>
+          <div class="content">
+            <label for="year" class="input-name">YEAR</label>
+            <input type="number" name="year" id="year" class="input-box" placeholder="YYYY" step="1" onclick="removeError()" />
+            <p class="error" id="error-year">Invalid</p>
+          </div>
+        </div>
+
+        <!-- Enter button -->
+        <div class="enter-part">
+          <div class="line"></div>
+          <div class="enter-button">
+            <button id="enter-b" >
+
+              <img
+                src="./images/icon-arrow.svg"
+                alt="Enter button"
+                width="50px"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Output part -->
+         <div class="output-part">
+          <div class="output-content">
+            <div class="output" id="out-year">--</div>
+            <p class="output-detail">years</p>
+          </div>
+          <div class="output-content">
+            <div class="output" id="out-month">--</div>
+            <p class="output-detail">months</p>
+          </div>
+          <div class="output-content">
+            <div class="output" id="out-day">--</div>
+            <p class="output-detail">days</p>
+          </div>
+         </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Raj Patel</a>.
+  </div> -->
+  </body>
+</html>

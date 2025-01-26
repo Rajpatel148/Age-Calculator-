@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+:root{
+    --primary-color : hsl(259, 100%, 65%);
+    --warning-color : hsl(0, 100%, 67%);
+    --font-color : hsl(0, 0%, 8%);
+    --background-color:hsl(0, 1%, 44%) ;
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    width: 900px;
+    height: 600px;
+    background-color: white;
+
+    padding: 50px;
+    border-radius: 25px;
+    border-bottom-right-radius: 200px;
+
+    box-shadow:0px 1px 7px var(--background-color);
+}
+
+.input-part{
+    display: flex;  
+    gap: 45px;
+    
+}
+.input-name{
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.72);
+    
+}
+.input-box{
+    height: 40px;
+    width: 130px;
+    border: 0.3px solid rgba(0, 0, 0, 0.274);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/* Enter Part */
+.enter-part{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+.line{
+    width: 80%;
+    height: 1px;
+    border: 0.5px solid rgba(90, 90, 90, 0.228);
+}
+.enter-button{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+}
+/* output - part */
+.output-part{
+    display: flex;
+    flex-direction: column;
+}
+.output{
+    color: var(--primary-color);
+    padding-right: 0.675rem;
+    font-size: 75px;
+}
+.output-content{
+    display: flex;
+    font-size: 65px;
+    font-weight: 800;
+}
+
+/* Error massage */
+.error{
+    color: red;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
